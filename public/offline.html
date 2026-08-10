@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#4878E8" />
+  <title>NexSpace - 离线</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <style>
+    body { background: #11131A; color: white; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .offline-shell { text-align: center; padding: 30px; }
+  </style>
+</head>
+<body>
+  <div class="offline-shell">
+    <svg viewBox="0 0 64 64" style="width:72px;height:72px;margin:0 auto;display:block">
+      <defs>
+        <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#4878E8"/>
+          <stop offset="100%" stop-color="#927DFF"/>
+        </linearGradient>
+      </defs>
+      <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#g)"/>
+      <path d="M20 22 L20 44 L28 44 L28 30 L36 44 L44 44 L44 22 L36 22 L36 36 L28 22 Z" fill="white"/>
+    </svg>
+    <h1 class="text-2xl font-semibold mt-6 mb-2">似乎断开了连接</h1>
+    <p class="text-slate-400 text-sm">检查网络后重试，或打开已缓存的页面继续工作</p>
+    <a href="/" class="btn-primary mt-6 inline-flex">回到主页</a>
+  </div>
+</body>
+</html>

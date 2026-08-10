@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  nexspace:
+    build: .
+    container_name: nexspace
+    restart: unless-stopped
+    ports:
+      - "4878:4878"
+    environment:
+      - NODE_ENV=production
+      - JWT_SECRET=${JWT_SECRET:-please-change-this-secret-in-production-please}
+      - PORT=4878
+      - HOST=0.0.0.0
+    volumes:
+      - nexspace-data:/app/data
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1:4878/"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  nexspace-data:
+    driver: local

@@ -1,0 +1,89 @@
+{
+  "name": "NexSpace 邻境工作台",
+  "short_name": "NexSpace",
+  "description": "一处空间，统筹所有事务 - 个人的云端工作台",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#11131A",
+  "theme_color": "#4878E8",
+  "lang": "zh-CN",
+  "categories": ["productivity", "utilities", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "新建任务",
+      "short_name": "任务",
+      "url": "/#/tasks",
+      "icons": [
+        { "src": "/icons/icon-192.png", "sizes": "192x192" }
+      ]
+    },
+    {
+      "name": "新建笔记",
+      "short_name": "笔记",
+      "url": "/#/notes",
+      "icons": [
+        { "src": "/icons/icon-192.png", "sizes": "192x192" }
+      ]
+    },
+    {
+      "name": "番茄专注",
+      "short_name": "专注",
+      "url": "/#/pomodoro",
+      "icons": [
+        { "src": "/icons/icon-192.png", "sizes": "192x192" }
+      ]
+    }
+  ]
+}
